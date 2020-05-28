@@ -37,6 +37,10 @@ public class Student {
 		public void setDept(String dept) {
 			this.dept = dept;
 		}
+		@Override
+		public String toString() {
+			return "Student [id=" + id + ", name=" + name + ", dept=" + dept + "]";
+		}
 		
 		
 		

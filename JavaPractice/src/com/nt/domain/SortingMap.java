@@ -18,15 +18,15 @@ public class SortingMap {
 		map.put("seven",7);
 		map.put("eight", 8);
 		List<Entry<String,Integer>> enteries=new ArrayList<>(map.entrySet());
-//		
-//		Collections.sort(enteries,new Comparator<Entry<String, Integer>>() {
-//
-//			@Override
-//			public int compare(Entry<String, Integer> o1, Entry<String, Integer> o2) {
-//				return o1.getKey().compareTo(o2.getKey());
-//			}
-//		});
-	//	Collections.sort(enteries,( o1,  o2) ->o1.getKey().compareTo(o2.getKey()));
+		
+		Collections.sort(enteries,new Comparator<Entry<String, Integer>>() {
+
+			@Override
+			public int compare(Entry<String, Integer> o1, Entry<String, Integer> o2) {
+				return o1.getKey().compareTo(o2.getKey());
+			}
+		});
+		Collections.sort(enteries,( o1,  o2) ->o1.getKey().compareTo(o2.getKey()));
 			
 		
 //		for(Entry<String, Integer> entry:enteries) {
